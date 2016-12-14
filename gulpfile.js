@@ -37,10 +37,20 @@ gulp.task('vendors', function(){
     .pipe(gulp.dest('app/vendors/'));
 });
 
+// Concatenating app.js
+gulp.task('scripts', function(){
+  gulp.src('src/js/**/*.js')
+    .pipe(concat('app.js'))
+    .pipe(gulp.dest('app/js/'))
+    .pipe(livereload({ start: true }));
+
+});
+
 gulp.task('watch', function(){
   livereload.listen();
+  gulp.watch('src/js/**/*.js', ['scripts']);
   gulp.watch('src/templates/*.jade', ['templates']);
   gulp.watch('src/sass/*.sass', ['sass']);
 });
 
-gulp.task('default', ['watch', 'vendors', 'templates', 'sass']);
+gulp.task('default', ['watch', 'scripts', 'vendors', 'templates', 'sass']);
