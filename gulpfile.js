@@ -6,6 +6,7 @@ const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const livereload = require('gulp-livereload');
 const concatCss = require('gulp-concat-css');
+const autoprefixer = require('gulp-autoprefixer');
 
 // Compiling jade to PHP
 gulp.task('templates', function(){
@@ -22,7 +23,11 @@ gulp.task('templates', function(){
 // Compiling sass to CSS
 gulp.task('sass', function(){
   return gulp.src('src/sass/*.sass')
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
     .pipe(gulp.dest('app/css'))
     .pipe(livereload({ start: true }));
 });
