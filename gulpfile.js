@@ -1,7 +1,7 @@
 'use strict';
 const gulp = require('gulp');
 // const jade = require('gulp-jade'); // compiles to HTML
-const jade = require('gulp-jade-php'); // compiles to PHP
+// const jade = require('gulp-jade-php'); // compiles to PHP
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const livereload = require('gulp-livereload');
@@ -9,6 +9,7 @@ const concatCss = require('gulp-concat-css');
 const autoprefixer = require('gulp-autoprefixer');
 
 // Compiling jade to PHP
+/*
 gulp.task('templates', function(){
   var MY_LOCALS = {};
   return gulp.src('src/templates/*.jade')
@@ -16,6 +17,14 @@ gulp.task('templates', function(){
       locals: MY_LOCALS,
       pretty: true
     }))
+    .pipe(gulp.dest('app/'))
+    .pipe(livereload({ start: true }));
+});
+*/
+
+// Copying template files to app folder
+gulp.task('copy', function(){
+  return gulp.src('src/templates/**/*')
     .pipe(gulp.dest('app/'))
     .pipe(livereload({ start: true }));
 });
@@ -53,9 +62,10 @@ gulp.task('scripts', function(){
 
 gulp.task('watch', function(){
   livereload.listen();
+  gulp.watch('src/templates/**/*', ['copy']);
   gulp.watch('src/js/**/*.js', ['scripts']);
-  gulp.watch('src/templates/*.jade', ['templates']);
+  // gulp.watch('src/templates/*.jade', ['templates']);
   gulp.watch('src/sass/*.sass', ['sass']);
 });
 
-gulp.task('default', ['watch', 'scripts', 'vendors', 'templates', 'sass']);
+gulp.task('default', ['watch', 'copy', 'scripts', 'vendors', 'sass']);
