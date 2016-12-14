@@ -1,0 +1,20 @@
+{
+  "name": "gulptemplate",
+  "version": "0.0.1",
+  "description": "basic project template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "GulpJS"
+  ],
+  "author": "Bjarke Handsdal",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-jade-php": "^2.0.0-0",
+    "gulp-sass": "^3.0.0"
+  }
+}
