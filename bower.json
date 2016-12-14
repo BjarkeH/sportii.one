@@ -1,0 +1,25 @@
+{
+  "name": "gulptemplate",
+  "description": "basic project template",
+  "main": "index.js",
+  "authors": [
+    "Bjarke Handsdal"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "GulpJS"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.0",
+    "bootstrap": "^3.3.7"
+  }
+}
