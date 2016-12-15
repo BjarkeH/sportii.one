@@ -1,0 +1,44 @@
+body {
+  background: #028A4E;
+  background-image: url("../images/bg.jpg");
+  background-position: top right;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100px;
+  background: #F3F0F0;
+}
+
+.jumbotron {
+  margin-top: 100px;
+  background: none;
+  height: 600px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.jumbotron .form-group {
+  background: #028A4E;
+  padding: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.jumbotron .form-group input[type="text"] {
+  font-size: 2em;
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  border: 0;
+  box-shadow: none;
+}

@@ -1,5 +1,3 @@
-// App js
-
 angular.module('directoryApp', [])
   .controller('directoryController', function(){
 

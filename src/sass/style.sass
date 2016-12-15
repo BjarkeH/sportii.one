@@ -1,1 +1,39 @@
 // Final stylesheet this should import all other styles for the project
+@import '_vars'
+
+body
+  background: $green
+  background:
+    image: url("../images/bg.jpg")
+    position: top right
+
+.header
+  position: fixed
+  width: 100%
+  top: 0
+  left: 0
+  height: 100px
+  background: $white
+
+.jumbotron
+  margin:
+    top: 100px
+  background: none
+  height: 600px
+  display: flex
+  align-items: center
+
+  .form-group
+    background: $green
+    padding: 10px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+    input[type="text"]
+      font-size: 2em
+      padding: 10px
+      border-radius: 7px
+      border: none
+      border: 0
+      box-shadow: none
