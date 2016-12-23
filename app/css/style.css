@@ -1,44 +1,180 @@
-body {
-  background: #028A4E;
-  background-image: url("../images/bg.jpg");
-  background-position: top right;
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .header {
   position: fixed;
+  z-index: 100;
+  height: 80px;
+  background: #fff;
   width: 100%;
-  top: 0;
-  left: 0;
-  height: 100px;
-  background: #F3F0F0;
+  line-height: 80px;
+}
+
+.header .headerWrapper {
+  height: 100%;
+}
+
+.header .headerWrapper li {
+  float: left;
+  list-style: none;
+  padding-left: 15px;
+}
+
+.header .headerWrapper li a {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.header .headerWrapper li a:hover {
+  text-decoration: none;
+  color: #FFA17F;
 }
 
 .jumbotron {
-  margin-top: 100px;
-  background: none;
+  padding: 0;
+  padding-top: 80px;
+  background: linear-gradient(#00223E, #FFA17F);
+  background-image: url("../images/jumbobg.jpg") linear-gradient(#e53935, #e35d5b);
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron .splash {
+  padding: 0;
+  transition: all 1s ease-in-out;
+  transform: rotateY(180deg) translateX(-50px);
+  opacity: 0;
+  height: 600px;
+  background-image: url("../images/transp.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: sepia(40%);
+}
+
+.jumbotron .intro {
+  padding: 0;
   height: 600px;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.jumbotron .form-group {
-  background: #028A4E;
-  padding: 10px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
-.jumbotron .form-group input[type="text"] {
-  font-size: 2em;
-  padding: 10px;
-  border-radius: 7px;
+.jumbotron .intro h2 {
+  display: block;
+  font-size: 5em;
+  width: 80%;
+  color: #fff;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jumbotron .intro form {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.jumbotron .intro form input[type="text"], .jumbotron .intro form input[type="password"] {
+  width: 100%;
+  background: none;
   border: none;
   border: 0;
-  box-shadow: none;
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+  padding: 5px;
+  color: white;
+  font-size: 1.5em;
+}
+
+.jumbotron .intro form input[type="text"]::-webkit-input-placeholder, .jumbotron .intro form input[type="password"]::-webkit-input-placeholder {
+  color: white;
+}
+
+.jumbotron .intro form input[type="text"]::-moz-placeholder, .jumbotron .intro form input[type="password"]::-moz-placeholder {
+  color: white;
+}
+
+.jumbotron .intro form input[type="text"]:-ms-input-placeholder, .jumbotron .intro form input[type="password"]:-ms-input-placeholder {
+  color: white;
+}
+
+.jumbotron .intro form input[type="text"]::placeholder, .jumbotron .intro form input[type="password"]::placeholder {
+  color: white;
+}
+
+.jumbotron .intro form input[type="text"]:focus, .jumbotron .intro form input[type="password"]:focus {
+  outline: none;
+}
+
+.jumbotron .intro form input[type="submit"] {
+  width: 20%;
+  border: none;
+  border: 0;
+  border-radius: 4px;
+  padding: 5px 0px;
+  background: skyblue;
+  color: white;
+}
+
+.jumbotron .intro form input[type="submit"]:focus {
+  outline: none;
+}
+
+.jumbotron .intro form input[type="submit"]:hover {
+  background: lightgreen;
+}
+
+.jumbotron .intro form a {
+  width: 40%;
+  justify-self: flex-end;
+}
+
+.latestPost h3 {
+  font-size: 2.5em;
+}
+
+.latestPost img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 764px) {
+  .jumbotron {
+    width: 100%;
+    height: 100vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 0px;
+  }
+  .jumbotron .intro {
+    height: auto !important;
+  }
+  .jumbotron h2 {
+    font-size: 4em !important;
+  }
+}
+
+.fadeIn {
+  transform: rotateY(180deg) translateX(0px) !important;
+  opacity: 1 !important;
 }

@@ -1,39 +1,13 @@
 // Final stylesheet this should import all other styles for the project
+
+// Variablaes
 @import '_vars'
 
-body
-  background: $green
-  background:
-    image: url("../images/bg.jpg")
-    position: top right
+// Pages styling
+@import '_frontpage'
 
-.header
-  position: fixed
-  width: 100%
-  top: 0
-  left: 0
-  height: 100px
-  background: $white
+// Media queries
+@import '_mediaqueries'
 
-.jumbotron
-  margin:
-    top: 100px
-  background: none
-  height: 600px
-  display: flex
-  align-items: center
-
-  .form-group
-    background: $green
-    padding: 10px
-    display: flex
-    justify-content: space-between
-    flex-wrap: wrap
-
-    input[type="text"]
-      font-size: 2em
-      padding: 10px
-      border-radius: 7px
-      border: none
-      border: 0
-      box-shadow: none
+// Animations
+@import '_keyframes'

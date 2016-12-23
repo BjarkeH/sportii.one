@@ -1,0 +1,137 @@
+// Front page styling
+
+html
+  overflow-x: hidden
+  overflow-y: scroll
+
+.header
+  position: fixed
+  z-index: 100
+  height: 80px
+  background: #fff
+  width: 100%
+  line-height: 80px
+
+  .headerWrapper
+    height: 100%
+
+    li
+      float: left
+      list-style: none
+      padding-left: 15px
+
+      a
+        color: #333
+        text-transform: uppercase
+        font:
+          size: 1.2em
+
+        &:hover
+          text-decoration: none
+          color: #FFA17F
+
+.jumbotron
+  padding: 0
+  padding:
+    top: 80px
+    // bottom: 80px
+  // height: 600px
+  // background: linear-gradient(#403B4A, #E7E9BB)
+  background: linear-gradient(#00223E, #FFA17F)
+    image: url("../images/jumbobg.jpg") linear-gradient(#e53935, #e35d5b)
+    size: cover
+    position: center
+  // overflow: hidden
+  // filter: blur(5px)
+
+  .splash
+    padding: 0
+    // margin: 0
+    transition: all 1s ease-in-out
+    transform: rotateY(180deg) translateX(-50px)
+    opacity: 0
+    height: 600px
+    // margin:
+      top: -80px
+    background:
+      image: url("../images/transp.png")
+      position: center
+      size: cover
+      repeat: no-repeat
+    // filter: contrast(60%)
+    // filter: brightness(80%) contrast(60%)
+    filter: sepia(40%)
+
+  .intro
+    padding: 0
+    height: 600px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+
+    h2
+      display: block
+      font:
+        size: 5em
+      width: 80%
+      color: #fff
+      margin:
+        bottom: 40px
+        left: auto
+        right: auto
+
+    form
+      display: block
+      width: 80%
+      margin: 0 auto
+      text-align: center
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+
+      input[type="text"], input[type="password"]
+        width: 100%
+        background: none
+        border: none
+        border: 0
+        border: 1px solid #fff
+        margin-bottom: 10px
+        padding: 5px
+        color: white
+        font:
+          size: 1.5em
+
+        &::placeholder
+          color: white
+
+        &:focus
+          outline: none
+
+      input[type="submit"]
+        width: 20%
+        border: none
+        border: 0
+        border-radius: 4px
+        padding: 5px 0px
+        background: skyblue
+        color: white
+
+        &:focus
+          outline: none
+
+        &:hover
+          background: lightgreen
+
+      a
+        width: 40%
+        justify-self: flex-end
+
+.latestPost
+
+  h3
+    font:
+      size: 2.5em
+
+  img
+    max-width: 100%
