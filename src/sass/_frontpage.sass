@@ -18,7 +18,7 @@ html
     li
       float: left
       list-style: none
-      padding-left: 15px
+      padding-left: 25px
 
       a
         color: #333
@@ -48,7 +48,7 @@ html
     padding: 0
     // margin: 0
     transition: all 1s ease-in-out
-    transform: rotateY(180deg) translateX(-50px) 
+    transform: rotateY(180deg) translateX(-50px)
     opacity: 0
     height: 600px
     // margin:
@@ -60,7 +60,7 @@ html
       repeat: no-repeat
     // filter: contrast(60%)
     // filter: brightness(80%) contrast(60%)
-    filter: sepia(60%)
+    filter: sepia(50%)
 
   .intro
     padding: 0
@@ -85,7 +85,7 @@ html
           size: 5em
         // width: 80%
         color: #fff
-        text-align: center
+        text-align: left !important
         margin:
           bottom: 40px
           left: auto
@@ -103,6 +103,7 @@ html
         color: #fff !important
         font:
           size: 1.2em
+          family: arial
 
         &::placeholder
           color: white
@@ -150,6 +151,7 @@ html
         // justify-self: flex-end
 
 .latestPost
+  margin-top: 120px
 
   h3
     font:
@@ -157,3 +159,12 @@ html
 
   img
     max-width: 100%
+    border-radius: 100% !important
+    transform: translateY(-70px)
+    border: 2px solid #e35d5b
+
+  .caption
+    margin-top: -50px
+
+    h4
+      text-transform: capitalize
