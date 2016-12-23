@@ -40,6 +40,7 @@ html {
   background-image: url("../images/jumbobg.jpg") linear-gradient(#e53935, #e35d5b);
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .jumbotron .splash {
@@ -52,7 +53,7 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  filter: sepia(40%);
+  filter: sepia(60%);
 }
 
 .jumbotron .intro {
@@ -68,19 +69,9 @@ html {
   flex-wrap: wrap;
 }
 
-.jumbotron .intro h2 {
-  display: block;
-  font-size: 5em;
-  width: 80%;
-  color: #fff;
-  margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .jumbotron .intro form {
   display: block;
-  width: 80%;
+  width: 300px;
   margin: 0 auto;
   text-align: center;
   display: -ms-flexbox;
@@ -91,16 +82,26 @@ html {
   flex-wrap: wrap;
 }
 
+.jumbotron .intro form h2 {
+  font-size: 5em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .jumbotron .intro form input[type="text"], .jumbotron .intro form input[type="password"] {
   width: 100%;
   background: none;
   border: none;
   border: 0;
   border: 1px solid #fff;
-  margin-bottom: 10px;
-  padding: 5px;
-  color: white;
-  font-size: 1.5em;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  padding: 7px 10px;
+  color: #fff !important;
+  font-size: 1.2em;
 }
 
 .jumbotron .intro form input[type="text"]::-webkit-input-placeholder, .jumbotron .intro form input[type="password"]::-webkit-input-placeholder {
@@ -119,12 +120,33 @@ html {
   color: white;
 }
 
+.jumbotron .intro form input[type="text"]:-webkit-autofill, .jumbotron .intro form input[type="password"]:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
+}
+
+.jumbotron .intro form input[type="text"]:-webkit-autofill:hover, .jumbotron .intro form input[type="password"]:-webkit-autofill:hover {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
+}
+
+.jumbotron .intro form input[type="text"]:-webkit-autofill:focus, .jumbotron .intro form input[type="password"]:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
+}
+
+.jumbotron .intro form input[type="text"]:-webkit-autofill:active, .jumbotron .intro form input[type="password"]:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
+}
+
 .jumbotron .intro form input[type="text"]:focus, .jumbotron .intro form input[type="password"]:focus {
   outline: none;
 }
 
 .jumbotron .intro form input[type="submit"] {
   width: 20%;
+  margin-top: -20px;
   border: none;
   border: 0;
   border-radius: 4px;
@@ -143,7 +165,6 @@ html {
 
 .jumbotron .intro form a {
   width: 40%;
-  justify-self: flex-end;
 }
 
 .latestPost h3 {
@@ -169,12 +190,15 @@ html {
   .jumbotron .intro {
     height: auto !important;
   }
-  .jumbotron h2 {
+  .jumbotron .intro form {
+    width: 100%;
+  }
+  .jumbotron .intro form h2 {
     font-size: 4em !important;
   }
 }
 
 .fadeIn {
-  transform: rotateY(180deg) translateX(0px) !important;
+  transform: rotateY(180deg) translateX(0px) translateY(0px) !important;
   opacity: 1 !important;
 }

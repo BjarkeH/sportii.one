@@ -33,8 +33,8 @@ include_once 'includes/header.php';
       <div class="col-sm-6">
         <div class="intro">
           <div class="formWrapper">
-            <h2>Login to Sportii.one</h2>
-            <form class="signIn" autocomplete="off" action="<?= $_SERVER['PHP_SELF'] ?>" method="POST">
+            <form class="signIn" autocomplete="on" action="<?= $_SERVER['PHP_SELF'] ?>" method="POST">
+              <h2>Login to Sportii.one</h2>
               <input type="text" name="email" placeholder="Email">
               <br>
               <input type="password" name="password" placeholder="Password">
