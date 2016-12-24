@@ -40,7 +40,7 @@ include_once 'includes/header.php';
               <input type="password" name="password" placeholder="Password">
               <br>
               <input type="submit" name="logIn" value="Log in">
-              <a href="#">Not a user yet?</a>
+              <a href="#">New to Sportii.one?</a>
               <a href="#">Forgot password?</a>
             </form>
           </div>
@@ -58,9 +58,9 @@ include_once 'includes/header.php';
 <div class="latestPost container">
   <div class="row">
     <div class="col-sm-12">
-      <h3>Mød nogle af vores engagerede trænere</h3>
+      <!-- <h3>Mød nogle af vores engagerede trænere</h3> -->
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="thumbnail trainer">
         <img style="margin: 0 auto; max-width: 100%" src="http://placehold.it/128x128" alt="">
         <div class="caption">
@@ -73,7 +73,7 @@ include_once 'includes/header.php';
         </div>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="thumbnail trainer">
         <img style="margin: 0 auto; max-width: 100%" src="http://placehold.it/128x128" alt="">
         <div class="caption">
@@ -86,7 +86,20 @@ include_once 'includes/header.php';
         </div>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
+      <div class="thumbnail trainer">
+        <img style="margin: 0 auto; max-width: 100%" src="http://placehold.it/128x128" alt="">
+        <div class="caption">
+          <h4>Post Title</h4>
+          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p>
+            <a href="#" class="btn btn-primary" role="button">Read More</a>
+            <a href="#" class="btn btn-default pull-right" role="button">&hearts;</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
       <div class="thumbnail trainer">
         <img style="margin: 0 auto; max-width: 100%" src="http://placehold.it/128x128" alt="">
         <div class="caption">

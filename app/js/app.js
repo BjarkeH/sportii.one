@@ -13,7 +13,7 @@ $('document').ready(function(){
   console.log(trainer[1].childNodes);
   var length = trainer.length;
   $.ajax({
-    url: 'https://randomuser.me/api/?results=3&nat=dk&gender=female',
+    url: 'https://randomuser.me/api/?results=20&nat=dk&gender=female',
     dataType: 'json',
     success: function(data){
       var trainerinfo = data;
