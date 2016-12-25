@@ -11,6 +11,6 @@
     <script type="text/javascript" src="vendors/vendor.js"></script>
     <!-- Adding app.js -->
     <script type="text/javascript" src="js/app.js"></script>
-    <title>Project Title</title>
+    <title>Sportii.One</title>
   </head>
   <body>

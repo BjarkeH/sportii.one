@@ -11,6 +11,8 @@ html
   background: #fff
   width: 100%
   line-height: 80px
+  // background:
+    image: url("../images/wall4.png")
 
   .headerWrapper
     height: 100%
@@ -23,12 +25,32 @@ html
       a
         color: #333
         text-transform: uppercase
+        position: relative
         font:
           size: 1.2em
+        padding: 5px 0px
+
+        &:after
+          content: ''
+          position: absolute
+          bottom: 0
+          width: 0%
+          height: 3px
+          background: #FFA17F
+          transition: all 0.2s ease-in-out
+          // bottom: -5px
+          left: 50%
+          transform: translateX(-50%)
 
         &:hover
           text-decoration: none
-          color: #FFA17F
+          color: #00223E
+
+        &:hover:after
+          width: 100%
+
+        &:link
+          text-decoration: none
 
 .jumbotron
   padding: 0
@@ -135,7 +157,7 @@ html
         border: 0
         border-radius: 4px
         padding: 5px 0px
-        background: skyblue
+        // background: skyblue
         color: white
 
         &:focus

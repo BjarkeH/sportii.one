@@ -39,7 +39,7 @@ include_once 'includes/header.php';
               <br>
               <input type="password" name="password" placeholder="Password">
               <br>
-              <input type="submit" name="logIn" value="Log in">
+              <input class="btn btn-primary" type="submit" name="logIn" value="Log in">
               <a href="#">New to Sportii.one?</a>
               <a href="#">Forgot password?</a>
             </form>
@@ -60,7 +60,7 @@ include_once 'includes/header.php';
     <div class="col-sm-12">
       <!-- <h3>Mød nogle af vores engagerede trænere</h3> -->
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-4">
       <div class="thumbnail trainer">
         <img style="margin: 0 auto; max-width: 100%" src="http://placehold.it/128x128" alt="">
         <div class="caption">
@@ -73,7 +73,7 @@ include_once 'includes/header.php';
         </div>
       </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-4">
       <div class="thumbnail trainer">
         <img style="margin: 0 auto; max-width: 100%" src="http://placehold.it/128x128" alt="">
         <div class="caption">
@@ -86,7 +86,7 @@ include_once 'includes/header.php';
         </div>
       </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-4">
       <div class="thumbnail trainer">
         <img style="margin: 0 auto; max-width: 100%" src="http://placehold.it/128x128" alt="">
         <div class="caption">
@@ -99,7 +99,7 @@ include_once 'includes/header.php';
         </div>
       </div>
     </div>
-    <div class="col-sm-3">
+    <!-- <div class="col-sm-3">
       <div class="thumbnail trainer">
         <img style="margin: 0 auto; max-width: 100%" src="http://placehold.it/128x128" alt="">
         <div class="caption">
@@ -111,7 +111,7 @@ include_once 'includes/header.php';
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
 

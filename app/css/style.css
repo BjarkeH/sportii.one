@@ -25,12 +25,34 @@ html {
 .header .headerWrapper li a {
   color: #333;
   text-transform: uppercase;
+  position: relative;
   font-size: 1.2em;
+  padding: 5px 0px;
+}
+
+.header .headerWrapper li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background: #FFA17F;
+  transition: all 0.2s ease-in-out;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header .headerWrapper li a:hover {
   text-decoration: none;
-  color: #FFA17F;
+  color: #00223E;
+}
+
+.header .headerWrapper li a:hover:after {
+  width: 100%;
+}
+
+.header .headerWrapper li a:link {
+  text-decoration: none;
 }
 
 .jumbotron {
@@ -152,7 +174,6 @@ html {
   border: 0;
   border-radius: 4px;
   padding: 5px 0px;
-  background: skyblue;
   color: white;
 }
 
@@ -192,6 +213,48 @@ html {
   text-transform: capitalize;
 }
 
+.trainer-header {
+  background: #444;
+  color: white;
+}
+
+.trainer-header .greeting {
+  padding-right: 20px;
+}
+
+.trainer-info {
+  padding-top: 120px;
+}
+
+.trainer-info .content {
+  border: 1px solid #ddd;
+  height: 240px;
+  border-radius: 2px;
+  padding: 15px 0px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.trainer-info .content .profileimage {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.trainer-info .content .profileimage img {
+  max-width: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-50%, 0%);
+  border-radius: 100%;
+}
+
 @media screen and (max-width: 764px) {
   .jumbotron {
     width: 100%;
@@ -217,6 +280,9 @@ html {
   .thumbnail {
     margin-top: 80px;
     margin-bottom: 80px;
+  }
+  .trainer-info {
+    padding-top: 80px;
   }
 }
 
