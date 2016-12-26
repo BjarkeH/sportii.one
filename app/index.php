@@ -33,7 +33,7 @@ include_once 'includes/header.php';
       <div class="col-sm-6">
         <div class="intro">
           <div class="formWrapper">
-            <form class="signIn" autocomplete="on" action="<?= $_SERVER['PHP_SELF'] ?>" method="POST">
+            <form class="signIn" autocomplete="on" action="trainer.php" method="POST">
               <h2>Login to Sportii.one</h2>
               <input type="text" name="email" placeholder="Email">
               <br>
